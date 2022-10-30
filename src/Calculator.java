@@ -551,12 +551,19 @@ public class Calculator {
 								
 							//Handle division
 							case "/":
-								finalAnswer = temporaryAnswer / Double.parseDouble(calculator_screen.getText());
-								calculator_screen.setText(String.valueOf(finalAnswer));
-								answered = true;
-								operator = "";
-								break;
-								
+								if (Double.parseDouble(calculator_screen.getText()) == 0.0) {
+									calculator_screen.setText("Division by zero");
+									answered = true;
+									operator = "";
+									break;
+								} else {
+									finalAnswer = temporaryAnswer / Double.parseDouble(calculator_screen.getText());
+									calculator_screen.setText(String.valueOf(finalAnswer));
+									answered = true;
+									operator = "";
+									break;
+								}
+
 							//Handle multiplication
 							case "*":
 								finalAnswer = temporaryAnswer * Double.parseDouble(calculator_screen.getText());
