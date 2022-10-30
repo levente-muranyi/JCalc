@@ -19,4 +19,4 @@
 
 - Arithmetic with fractions
 
-<sub>The logic of the program only handle one operation with only two arguments at a time. :heavy_exclamation_mark:</sub>
+<sub>The logic of the program can only handle one operation with two arguments at a time. :heavy_exclamation_mark:</sub>
